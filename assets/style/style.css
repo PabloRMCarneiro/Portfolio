@@ -131,7 +131,6 @@ li{
     .container{
         display: block;
     }
-    
     .right-space{
         width: 100%;
         max-width: 100%;
@@ -163,19 +162,16 @@ li{
   
     }
 }
-@media (max-height: 600px){
+@media (max-height: 700px){
     .icons-links{
         display: none;
     }
+
 }
 @media (max-width: 800px){
-    .container{
-        display: block;
-        height: 100px;
-    }
-    .right-space{
-        display: block;
-        height: 100px;
+    
+    .icons-links{
+        display: none;
     }
     .right-space h1{
         font-size: 7.5vw;
@@ -216,8 +212,7 @@ li{
     }
     .close-menu:not(:checked) ~ p,
     .close-menu:not(:checked) ~ h1,
-    .close-menu:not(:checked) ~ button,
-    .close-menu:not(:checked) ~ footer{
+    .close-menu:not(:checked) ~ button{
         display: block;
     }
     .close-menu{
@@ -243,10 +238,12 @@ li{
     .close-menu::checked ~ .menu{
         display: block;
     }
+    .close-menu:checked ~ footer{
+        display: block;
+    }
     .close-menu:checked ~ p,
     .close-menu:checked ~ h1,
-    .close-menu:checked ~ button,
-    .close-menu:checked ~ footer{
+    .close-menu:checked ~ button{
         display: none;
     }
     .close-menu:checked ~ .close-menu-label::after{
