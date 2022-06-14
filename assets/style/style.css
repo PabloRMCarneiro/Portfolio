@@ -169,7 +169,14 @@ li{
     }
 }
 @media (max-width: 600px){
-    
+    .container{
+        display: block;
+        height: 100px;
+    }
+    .right-space{
+        display: block;
+        height: 100px;
+    }
     .right-space h1{
         font-size: 7.5vw;
         margin-top: 25vh;
@@ -205,9 +212,14 @@ li{
         font-weight: 400;
     }
     .menu{
+        display: none;
+    }
+    .right-space footer,
+    .right-space h1,
+    .right-space p,
+    .right-space button{
         display: block;
     }
-    
     .close-menu{
         position: fixed;
         top: 0;
@@ -231,14 +243,11 @@ li{
     .close-menu:checked ~ .menu{
         display: block;
     }
-    .right-space footer,
-    .right-space h1,
-    .right-space p,
-    .right-space button{
+    .close-menu:checked ~.right-space footer,
+    .close-menu:checked ~.right-space h1,
+    .close-menu:checked ~.right-space p,
+    .close-menu:checked ~.right-space button{
         display: none;
-    }
-    .close-menu::checked ~ .right-space footer{
-        display: none !important;
     }
     .close-menu:checked ~ .close-menu-label::after{
         content: '×';
