@@ -16,7 +16,14 @@
     height: 100vh;
 
 }
-
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+     /* creates padding around scroll thumb */
+  }
 a{
     text-decoration: none;
 }
@@ -169,7 +176,13 @@ li{
 
 }
 @media (max-width: 800px){
-    
+    .menu::-webkit-scrollbar {
+        width: 6px;              
+    }
+    .menu::-webkit-scrollbar-thumb {
+        background-color: white;   
+        border-radius: 20px;       
+    }
     .icons-links{
         display: none;
     }
@@ -193,8 +206,7 @@ li{
         left: 0;
         bottom: 0;
         text-align: center;
-        height: 100vh;
-        background-color: white;
+        overflow: scroll;
     }
     .right-space .menu ul{
         flex-direction: column;
@@ -249,4 +261,5 @@ li{
     .close-menu:checked ~ .close-menu-label::after{
         content: '×';
     }
+    
 }
