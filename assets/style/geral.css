@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 5.5vw;
         margin-top: 25vh;
     }
-    .right-space button{
+    .right-space .button-home{
         border: 1px solid var(--azul-medio-escuro);
         width: 20vw;
         height: 4vw;
@@ -130,7 +130,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 7.5vw;
         margin-top: 25vh;
     }
-    .right-space button{
+    .right-space .button-home{
         border: 1px solid var(--azul-medio-escuro);
         width: 30vw;
         height: 6vw;
@@ -164,7 +164,8 @@ body::-webkit-scrollbar-thumb {
     }
     .close-menu:not(:checked) ~ p,
     .close-menu:not(:checked) ~ h1,
-    .close-menu:not(:checked) ~ button
+    .close-menu:not(:checked) ~ .button-home,
+    .close-menu:not(:checked) ~ .h2-contato,
     .close-menu:not(:checked) ~ .formulario{
         display: block;
     }
@@ -196,7 +197,8 @@ body::-webkit-scrollbar-thumb {
     }
     .close-menu:checked ~ p,
     .close-menu:checked ~ h1,
-    .close-menu:checked ~ button,
+    .close-menu:checked ~ .button-home,
+    .close-menu:checked ~ .h2-contato,
     .close-menu:checked ~ .formulario{
         display: none;
     }

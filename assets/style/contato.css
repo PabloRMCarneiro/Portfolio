@@ -50,7 +50,7 @@
 
 }
 .formulario button:hover{
-    background-color: var(--azul-claro);
+    background-color: rgb(69, 151, 240);
     color: white;
 }
 .formulario button:focus{
@@ -73,5 +73,10 @@
     }
     .formulario{
         flex: 1 1 400px;
+    }
+}
+@media (min-width: 800px){
+    .formulario{
+        align-items: center;
     }
 }
