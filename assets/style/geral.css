@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body::-webkit-scrollbar {
+    width: 6px;               
+}
+body::-webkit-scrollbar-thumb {
+    background-color: white;    
+    border-radius: 20px;       
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.right-space{
+    width: 50%;
+    max-width: 50%;
+    height: 100vh;
+}
+.left-space{
+    width: 50%;
+    border: none;
+    overflow: hidden;
+}
+
+.menu{
+    margin: 30px;
+}
+.menu ul{    
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.menu ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul li a{
+    color: var(--azul-claro);
+    font-size: 1.1vw;
+    font-weight: 300;
+    transition: all 0.4s;
+    
+}
+.menu ul li a:hover{
+    transform: scale(1.2);
+    font-weight: 400;
+    
+}
+.icons-links{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    text-align: center;
+    line-height: 7vw;
+    
+}
+.icons-links a{
+    padding-left: 15px;
+    opacity: 0.7;
+}
+.icons-links img{
+    width: 2.5vh;
+    height: auto;
+}
+.close-menu{
+    display: none;
+}
+@media (max-width: 1070px){
+    .container{
+        display: block;
+    }
+    .right-space{
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+    }
+    .left-space{
+        width: 0%;
+        height: 0%;
+    }
+    .right-space .menu ul li a{
+        font-size: 2.5vw;
+    }
+    .right-space h1{
+        font-size: 5.5vw;
+        margin-top: 25vh;
+    }
+    .right-space button{
+        border: 1px solid var(--azul-medio-escuro);
+        width: 20vw;
+        height: 4vw;
+        font-size: 1.5vw;
+    }
+    .right-space p{
+        font-size: 2.5vw;
+    }
+    .icons-links{
+        text-align: center;
+        width: 100%;
+  
+    }
+}
+@media (max-height: 600px){
+    .icons-links{
+        display: none;
+    }
+}
+@media (max-width: 800px){
+
+    .menu::-webkit-scrollbar {
+        width: 6px;              
+    }
+    .menu::-webkit-scrollbar-thumb {
+        background-color: white;   
+        border-radius: 20px;       
+    }
+    .icons-links{
+        display: none;
+    }
+    .right-space h1{
+        font-size: 7.5vw;
+        margin-top: 25vh;
+    }
+    .right-space button{
+        border: 1px solid var(--azul-medio-escuro);
+        width: 30vw;
+        height: 6vw;
+        font-size: 2.5vw;
+    }
+    .right-space p{
+        font-size: 3.5vw;
+    }
+    .right-space .menu{
+        position: fixed;
+        right: 0;
+        top: 15vh;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        overflow: scroll;
+    }
+    .right-space .menu ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .right-space .menu ul li{
+        margin-top: 10vw;
+    }
+    .right-space .menu ul li a{
+        font-size: 3.5vw;
+        font-weight: 400;
+    }
+    .close-menu:not(:checked) ~ .menu{
+        display: none;
+    }
+    .close-menu:not(:checked) ~ p,
+    .close-menu:not(:checked) ~ h1,
+    .close-menu:not(:checked) ~ button
+    .close-menu:not(:checked) ~ .formulario{
+        display: block;
+    }
+    .close-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .close-menu-label::after{
+        content: '☰';
+        position: fixed;
+        top: 5vw;
+        right: 5vw;
+        /* background-color: var(--chumbo); */
+        color: var(--chumbo);
+        font-size: 8vw;
+        line-height: 8vw;
+        width: 8vw;
+        height: 8vw;
+        text-align: center;
+        padding: 1vw;
+        cursor: pointer;
+    }
+    .close-menu::checked ~ .menu{
+        display: block;
+    }
+    .close-menu:checked ~ footer{
+        display: block;
+    }
+    .close-menu:checked ~ p,
+    .close-menu:checked ~ h1,
+    .close-menu:checked ~ button,
+    .close-menu:checked ~ .formulario{
+        display: none;
+    }
+    .close-menu:checked ~ .close-menu-label::after{
+        content: '×';
+    }
+    @media (max-height: 570px){
+        .icons-links{
+            display: none !important;
+        }
+    }
+    
+}

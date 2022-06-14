@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./assets/style/cores.css">
+    <link rel="stylesheet" href="./assets/style/contato.css">
+    <link rel="stylesheet" href="./assets/style/geral.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="right-space">
+            <input type="checkbox" role="button" id="close-menu" class="close-menu" aria-label="Close menu">
+            <label for="close-menu" class="close-menu-label" title="close menu"></label>
+            <div class="menu">
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="#">Minhas Skills</a></li>
+                    <li><a href="#">Sobre Mim</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <h2 class="margin-content h2-contato">Entre em<span style="color: var(--salmao);"> Contato</span>.</h2>
+            <p class="margin-content p-contato">I'm interested in freelance opportunities - especially ambitious or large projects. However, if you have other request or question, don't hesitate to use the form.</p>
+            <form class="formulario">
+                <label for="name"></label>
+                <input type="text" id="name" class="name" placeholder="Name">
+                <label for="email"></label>
+                <input type="email" id="email" class="email" placeholder="E-mail">
+                <label for="telefone"></label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+                <label for="message"></label>
+                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                <button type="submit" >Enviar Mensagem</button>
+            </form>
+            <footer class="icons-links">
+                <a href="https://github.com/PabloRMCarneiro" target="_blank"><img src="./assets/img/github_icon.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/pablo-ryan-b1388923b/" target="_blank"><img src="./assets/img/linkedin_icon.png" alt=""></a>
+            </footer>
+        </div>
+        <div class="left-space">
+            <video controls autoplay loop>
+                <source src="./assets/videos/video-loop-bg.mp4" type="video/mp4" ></source>
+            </video>
+        </div>
+    </div>
+</body>
+</html>
