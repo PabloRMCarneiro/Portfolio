@@ -224,10 +224,10 @@ li{
         right: 5vw;
         /* background-color: var(--chumbo); */
         color: var(--chumbo);
-        font-size: 6vw;
-        line-height: 6vw;
-        width: 6vw;
-        height: 6vw;
+        font-size: 8vw;
+        line-height: 8vw;
+        width: 8vw;
+        height: 8vw;
         text-align: center;
         padding: 1vw;
         cursor: pointer;
