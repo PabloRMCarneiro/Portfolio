@@ -136,7 +136,7 @@ li{
         height: 0%;
     }
     .right-space nav ul li a{
-        font-size: 1.5vw;
+        font-size: 2.5vw;
     }
     .right-space h1{
         font-size: 5.5vw;
@@ -159,4 +159,20 @@ li{
     .icons-links{
         display: none;
     }
+}
+@media (max-width: 600px){
+    .right-space h1{
+        font-size: 7.5vw;
+        margin-top: 25vh;
+    }
+    .right-space button{
+        border: 1px solid var(--azul-medio-escuro);
+        width: 30vw;
+        height: 6vw;
+        font-size: 2.5vw;
+    }
+    .right-space p{
+        font-size: 3.5vw;
+    }
+    
 }
