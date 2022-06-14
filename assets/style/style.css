@@ -173,9 +173,9 @@ li{
     .icons-links{
         display: none;
     }
-
 }
 @media (max-width: 800px){
+
     .menu::-webkit-scrollbar {
         width: 6px;              
     }
@@ -260,6 +260,11 @@ li{
     }
     .close-menu:checked ~ .close-menu-label::after{
         content: '×';
+    }
+    @media (max-height: 570px){
+        .icons-links{
+            display: none !important;
+        }
     }
     
 }
