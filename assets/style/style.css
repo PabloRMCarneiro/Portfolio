@@ -16,6 +16,9 @@
     height: 100vh;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
 }
@@ -90,6 +93,8 @@ li{
     color: var(--azul-claro);
     font-weight: 400;
     font-size: 1.3vw;
+    line-height: 1.3vw;
+    text-align: center;
     cursor: pointer;
     background-color: white;
     transition: all 400ms ease-in-out;
@@ -110,7 +115,7 @@ li{
     bottom: 0;
     width: 60%;
     text-align: center;
-    line-height: 10vh;
+    line-height: 7vw;
     
 }
 .icons-links a{
@@ -152,7 +157,9 @@ li{
         font-size: 2.5vw;
     }
     .icons-links{
+        text-align: center;
         width: 100%;
+  
     }
 }
 @media (max-height: 600px){
@@ -161,6 +168,12 @@ li{
     }
 }
 @media (max-width: 600px){
+    .container{
+        max-height: 700px;
+    }
+    .right-space{
+        max-height: 700px;
+    }
     .right-space h1{
         font-size: 7.5vw;
         margin-top: 25vh;
@@ -174,5 +187,53 @@ li{
     .right-space p{
         font-size: 3.5vw;
     }
-    
+    .right-space nav{
+        position: fixed;
+        right: 0;
+        top: 35vw;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        height: 700px;
+        background-color: white;
+    }
+    .right-space nav ul{
+        flex-direction: column;
+        
+        justify-content: center;
+    }
+    .right-space nav ul li{
+        margin-top: 10vw;
+    }
+    .right-space nav ul li a{
+        font-size: 3.5vw;
+        font-weight: 400;
+    }
+    .right-space nav{
+        display: none;
+    }
+    .close-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .close-menu-label::after{
+        content: '☰';
+        position: fixed;
+        top: 5vw;
+        right: 5vw;
+        /* background-color: var(--chumbo); */
+        color: var(--chumbo);
+        font-size: 6vw;
+        line-height: 6vw;
+        width: 6vw;
+        height: 6vw;
+        text-align: center;
+        padding: 1vw;
+        cursor: pointer;
+    }
+    .close-menu:checked~.right-space nav{
+        display: block;
+    }
+
 }
