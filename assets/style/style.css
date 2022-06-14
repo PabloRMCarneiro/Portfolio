@@ -125,7 +125,7 @@ li{
     height: auto;
 }
 .close-menu{
-    display: none;
+    display: block;
 }
 @media (max-width: 1070px){
     .container{
@@ -212,6 +212,7 @@ li{
     .menu{
         display: block;
     }
+    
     .close-menu{
         position: fixed;
         top: 0;
@@ -234,6 +235,15 @@ li{
     }
     .close-menu:checked ~ .menu{
         display: block;
+    }
+    .right-space footer,
+    .right-space h1,
+    .right-space p,
+    .right-space button{
+        display: none;
+    }
+    .close-menu::checked ~ .right-space footer{
+        display: none !important;
     }
     .close-menu:checked ~ .close-menu-label::after{
         content: '×';
