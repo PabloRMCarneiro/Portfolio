@@ -125,7 +125,7 @@ li{
     height: auto;
 }
 .close-menu{
-    display: block;
+    display: none;
 }
 @media (max-width: 1070px){
     .container{
@@ -168,7 +168,7 @@ li{
         display: none;
     }
 }
-@media (max-width: 600px){
+@media (max-width: 800px){
     .container{
         display: block;
         height: 100px;
@@ -211,13 +211,13 @@ li{
         font-size: 3.5vw;
         font-weight: 400;
     }
-    .menu{
+    .close-menu:not(:checked) ~ .menu{
         display: none;
     }
-    .right-space footer,
-    .right-space h1,
-    .right-space p,
-    .right-space button{
+    .close-menu:not(:checked) ~ p,
+    .close-menu:not(:checked) ~ h1,
+    .close-menu:not(:checked) ~ button,
+    .close-menu:not(:checked) ~ footer{
         display: block;
     }
     .close-menu{
@@ -240,13 +240,13 @@ li{
         padding: 1vw;
         cursor: pointer;
     }
-    .close-menu:checked ~ .menu{
+    .close-menu::checked ~ .menu{
         display: block;
     }
-    .close-menu:checked ~.right-space footer,
-    .close-menu:checked ~.right-space h1,
-    .close-menu:checked ~.right-space p,
-    .close-menu:checked ~.right-space button{
+    .close-menu:checked ~ p,
+    .close-menu:checked ~ h1,
+    .close-menu:checked ~ button,
+    .close-menu:checked ~ footer{
         display: none;
     }
     .close-menu:checked ~ .close-menu-label::after{
