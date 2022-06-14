@@ -16,9 +16,7 @@
     height: 100vh;
 
 }
-html{
-    scroll-behavior: smooth;
-}
+
 a{
     text-decoration: none;
 }
@@ -232,8 +230,11 @@ li{
         padding: 1vw;
         cursor: pointer;
     }
-    .close-menu:checked~.right-space nav{
-        display: block;
+    .close-menu:checked ~ .right-space nav{ 
+        display: inline;
     }
-
+    .close-menu:checked ~ .close-menu-label::after{
+        content: '×';
+        
+    }
 }
