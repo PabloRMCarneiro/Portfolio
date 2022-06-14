@@ -169,12 +169,7 @@ li{
     }
 }
 @media (max-width: 600px){
-    .container{
-        max-height: 700px;
-    }
-    .right-space{
-        max-height: 700px;
-    }
+    
     .right-space h1{
         font-size: 7.5vw;
         margin-top: 25vh;
@@ -191,11 +186,11 @@ li{
     .right-space .menu{
         position: fixed;
         right: 0;
-        top: 35vw;
+        top: 25vh;
         left: 0;
         bottom: 0;
         text-align: center;
-        height: 700px;
+        height: 100vh;
         background-color: white;
     }
     .right-space .menu ul{
