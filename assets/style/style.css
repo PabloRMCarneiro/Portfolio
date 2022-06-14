@@ -38,26 +38,26 @@ li{
     max-width: 60%;
     height: 100vh;
 }
-.right-space nav{
+.right-space .menu{
     margin: 30px;
 }
-.right-space nav ul{    
+.right-space .menu ul{    
     display: flex;
     justify-content: space-around;
     align-items: center; 
 }
-.right-space nav ul li{
+.right-space .menu ul li{
     display: flex;
     justify-content: space-between;
 }
-.right-space nav ul li a{
+.right-space .menu ul li a{
     color: var(--azul-claro);
     font-size: 1.1vw;
     font-weight: 300;
     transition: all 0.4s;
     
 }
-.right-space nav ul li a:hover{
+.right-space .menu ul li a:hover{
     transform: scale(1.2);
     font-weight: 400;
     
@@ -124,6 +124,9 @@ li{
     width: 2vh;
     height: auto;
 }
+.close-menu{
+    display: none;
+}
 @media (max-width: 1070px){
     .container{
         display: block;
@@ -138,7 +141,7 @@ li{
         width: 0%;
         height: 0%;
     }
-    .right-space nav ul li a{
+    .right-space .menu ul li a{
         font-size: 2.5vw;
     }
     .right-space h1{
@@ -185,7 +188,7 @@ li{
     .right-space p{
         font-size: 3.5vw;
     }
-    .right-space nav{
+    .right-space .menu{
         position: fixed;
         right: 0;
         top: 35vw;
@@ -195,20 +198,19 @@ li{
         height: 700px;
         background-color: white;
     }
-    .right-space nav ul{
+    .right-space .menu ul{
         flex-direction: column;
-        
         justify-content: center;
     }
-    .right-space nav ul li{
+    .right-space .menu ul li{
         margin-top: 10vw;
     }
-    .right-space nav ul li a{
+    .right-space .menu ul li a{
         font-size: 3.5vw;
         font-weight: 400;
     }
-    .right-space nav{
-        display: none;
+    .menu{
+        display: block;
     }
     .close-menu{
         position: fixed;
@@ -230,11 +232,10 @@ li{
         padding: 1vw;
         cursor: pointer;
     }
-    .close-menu:checked ~ .right-space nav{ 
-        display: inline;
+    .close-menu:checked ~ .menu{
+        display: block;
     }
     .close-menu:checked ~ .close-menu-label::after{
         content: '×';
-        
     }
 }
