@@ -74,9 +74,31 @@
     .formulario{
         flex: 1 1 400px;
     }
+    .formulario button{
+        width: 20vw;
+        height: 4vw;
+        font-size: 1.5vw;
+        margin-bottom: 5vw;
+    }
 }
-@media (min-width: 800px){
+@media (max-width: 800px){
+    .right-space{
+        overflow: scroll;
+    }
+    .right-space .h2-contato{
+        margin-top: 12vw;
+    
+    }
+    
     .formulario{
-        align-items: center;
+        padding: 0;
+        margin-left: 30%;
+    }
+    .formulario button{
+        display: none;
+        width: 30vw;
+        height: 6vw;
+        font-size: 3vw;
+        
     }
 }
