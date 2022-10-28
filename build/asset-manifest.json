@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.df566227.css",
+    "main.js": "/static/js/main.5fe8bb21.js",
+    "static/media/pm.gif": "/static/media/pm.955efac2df39c857ee74.gif",
+    "static/media/ispotify.gif": "/static/media/ispotify.de07486d5438f0c69b03.gif",
+    "static/media/3png": "/static/media/3png.894ff44173d630ce66cb",
+    "static/media/2.png": "/static/media/2.f8e028cb10c1a49a3b8e.png",
+    "static/media/7.png": "/static/media/7.f9364e7b24ebbad2f7b5.png",
+    "static/media/capa.png": "/static/media/capa.df8e9a724e9d8821ea78.png",
+    "static/media/HeadingNow-74Regular.otf": "/static/media/HeadingNow-74Regular.988967de9a0dff093740.otf",
+    "static/media/HeadingNow-72Light.otf": "/static/media/HeadingNow-72Light.1ca8d4d1f0004edf2177.otf",
+    "static/media/image.png": "/static/media/image.ab89980bdc9bef60dc32.png",
+    "static/media/bg.png": "/static/media/bg.11d8ec38d24aff077003.png",
+    "static/media/logo.png": "/static/media/logo.5aa2fa7f68346d21a902.png",
+    "static/media/cs.png": "/static/media/cs.47dae8d55c07aee95b0b.png",
+    "static/media/quote.svg": "/static/media/quote.b6c84129796166895505ca1a3ba52a66.svg",
+    "index.html": "/index.html",
+    "main.df566227.css.map": "/static/css/main.df566227.css.map",
+    "main.5fe8bb21.js.map": "/static/js/main.5fe8bb21.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df566227.css",
+    "static/js/main.5fe8bb21.js"
+  ]
+}
