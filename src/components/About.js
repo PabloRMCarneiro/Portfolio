@@ -25,6 +25,7 @@ const About = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.6 }}
             className='flex-1 h-full xl:mt-48'>
+              
             <h2 className='h2 text-[#1F1B57]'>{title}</h2>
             <div className='flex flex-col items-end'>
               <div className='max-w-[530px] text-grey'>
