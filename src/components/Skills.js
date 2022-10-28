@@ -33,19 +33,19 @@ const Skills = () => {
   useEffect(() => {
     if (inView) {
       setTimeout(() => {
-        if (Ri < 90) {
+        if (Ri < 75) {
           setRi(Ri + 1);
         }
-        if (Js < 95) {
+        if (Js < 80) {
           setJs(Js + 1);
         }
-        if (Next < 75) {
+        if (Next < 15) {
           setNext(Next + 1);
         }
-        if (Ts < 80) {
+        if (Ts < 45) {
           setTs(Ts + 1);
         }
-        if (Node < 65) {
+        if (Node < 10) {
           setNode(Node + 1);
         }
         
@@ -61,7 +61,7 @@ const Skills = () => {
 
   const styles = {
     path: {
-      stroke: '#3A41E4',
+      stroke: '#111111',
     },
     trail: {
       stroke: '#EEEEEE',
@@ -72,7 +72,7 @@ const Skills = () => {
     },
   };
 
-  const color = '#3A41E4';
+  const color = '#111111';
 
   return (
     <motion.section
@@ -82,9 +82,10 @@ const Skills = () => {
       viewport={{ once: false, amount: 0.1 }}
       ref={ref}
       className='section font-primary'
+      id='skills'
     >
       <div className='container mx-auto'>
-        <p className='h2 max-w-[370px] lg:mb-20'>My Skills:</p>
+        <p className='h2 max-w-[370px] lg:mb-20 text-[#1F1B57]'>My Skills:</p>
         <div className='flex flex-col xl:flex-row justify-between items-center gap-y-12'>
           <div className='w-[150px] lg:w-[175px] flex flex-col justify-center items-center gap-y-6'>
             <CircularProgressbar

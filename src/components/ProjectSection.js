@@ -18,17 +18,17 @@ const slides = projectData.images.map(({ original, width, height }) => ({
 const GallerySection = () => {
   const [index, setIndex] = useState(-1);
 
-  const { title, btnText, btnIcon, images } = projectData;
+  const { title, images } = projectData;
 
   return (
-    <section className='bg-[#f9f9f9] section relative mt-[40px] lg:mt-0'>
+    <section className='bg-[#ffffff] section relative mt-[40px] lg:mt-0'id='projects'>
       <div className="container mx-auto">
         <motion.h2
           variants={fadeIn('up')}
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6 }}
-          className='h2 max-w-[370px] lg:mb-20'>{title}
+          className='h2 max-w-[370px] lg:mb-20 text-[#1F1B57]'>{title}
         </motion.h2>
       </div>
       <motion.div
@@ -48,19 +48,6 @@ const GallerySection = () => {
           index={index}
           close={() => setIndex(-1)}
         />
-      </motion.div>
-      <motion.div
-        variants={fadeIn('up')}
-        initial='hidden'
-        whileInView={'show'}
-        viewport={{ once: false, amount: 0.2 }}
-        className='flex justify-center'>
-        <button className='btn btn-lg btn-dark btn:hover'>
-          {btnText}
-          <div className='text-xl'>
-            {btnIcon}
-          </div>
-        </button>
       </motion.div>
     </section>
   );

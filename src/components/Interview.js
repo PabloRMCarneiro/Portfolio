@@ -26,7 +26,7 @@ const Interview = () => {
           <div className='flex flex-col items-start max-w-[880px]'>
             <motion.h3
               variants={fadeIn('down')}
-              className='text-white text-[40px] lg:text-[60px] leading-[1.1] font-tertiary -tracking-[1.5px] capitalize  mb-8'
+              className='text-white text-[40px] lg:text-[50px] leading-[1.1] font-tertiary -tracking-[1.5px] capitalize  mb-8'
             >
               {title}
             </motion.h3>
@@ -54,7 +54,7 @@ const Interview = () => {
               channel='youtube'
               autoplay
               isOpen={isOpen}
-              videoId='_l1mqYQuNf8'
+              videoId=''
               onClose={() => setOpen(false)}
             />
           </div>

@@ -31,19 +31,19 @@ const Skills = () => {
   useEffect(() => {
     if (inView) {
       setTimeout(() => {
-        if (Css < 95) {
+        if (Css < 85) {
           setCss(Css + 1);
         }
         if (Ubuntu < 85) {
           setUbuntu(Ubuntu + 1);
         }
-        if (Html < 90) {
+        if (Html < 80) {
           setHtml(Html + 1);
         }
-        if (Mongo < 60) {
+        if (Mongo < 25) {
           setMongo(Mongo + 1);
         }
-        if (Msql < 55) {
+        if (Msql < 15) {
           setMsql(Msql + 1);
         }
       
@@ -60,7 +60,7 @@ const Skills = () => {
 
   const styles = {
     path: {
-      stroke: '#3A41E4',
+      stroke: '#111111',
     },
     trail: {
       stroke: '#EEEEEE',
@@ -71,7 +71,7 @@ const Skills = () => {
     },
   };
 
-  const color = '#3A41E4';
+  const color = '#111111';
 
   return (
     <motion.section

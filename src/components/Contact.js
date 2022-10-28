@@ -6,6 +6,9 @@ import { motion } from 'framer-motion';
 // import variants
 import { fadeIn } from '../variants';
 
+import isEmail from 'validator/lib/isEmail';
+
+
 const Contact = () => {
   // destructure contact data
   const { title, info, form } = contactData;
@@ -15,11 +18,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message)
+    if (!isEmail(email)) {
+      alert('Invalid email address');
+    }
+    if (!name || !email || !message) {
+      alert('Please fill all fields');
+    }
+    setName('');
+    setEmail('');
+    setMessage('');
   }
 
   return (
-    <section className='section'>
+    <section className='section' id='contact'>
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-y-16'>
           {/* text */}
@@ -31,7 +42,7 @@ const Contact = () => {
             className='flex-1'
           >
             {/* title */}
-            <h2 className='h2 max-w-[490px]'>{title}</h2>
+            <h2 className='h2 max-w-[490px] text-[#1F1B57]'>{title}</h2>
             {/* info items */}
             <div className='flex flex-col xl:flex-row gap-x-5 gap-y-16 xl:gap-y-0'>
               {info.map((item, index) => {
@@ -41,7 +52,7 @@ const Contact = () => {
                   // item
                   <div key={index}>
                     {/* title */}
-                    <div className='font-primary uppercase font-medium text-xl mb-3'>
+                    <div className='font-primary uppercase font-medium text-xl mb-3' key={subtitle}>
                       {title}
                     </div>
                     {/* subtitle */}
@@ -108,7 +119,7 @@ const Contact = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
-              <button className='self-start btn btn-sm btn-dark' type='submit'>
+              <button className='self-start btn btn-sm bg-[#1F1B57] text-white' type='submit'>
                 {form.btnText}
               </button>
             </form>

@@ -1,13 +1,11 @@
 // import images
-import Logo from '../src/img/header/logo.svg';
-import ProjectImg1 from '../src/img/gallery/1.png';
+import Logo from '../src/img/header/logo.png';
+import ProjectImg1 from '../src/img/gallery/7.png';
 import ProjectImg2 from '../src/img/gallery/2.png';
-import ProjectImg3 from '../src/img/gallery/3.png';
-import ProjectImg4 from '../src/img/gallery/4.png';
-import ProjectImg5 from '../src/img/gallery/5.png';
-import ProjectImg6 from '../src/img/gallery/6.png';
-import ProjectImg7 from '../src/img/gallery/7.png';
-import ProjectImg8 from '../src/img/gallery/8.png';
+import ProjectImg3 from '../src/img/gallery/pm.gif';
+import ProjectImg5 from '../src/img/gallery/3png';
+import ProjectImg6 from '../src/img/gallery/ispotify.gif';
+import ProjectImg8 from '../src/img/gallery/cs.png';
 import QuoteImg from '../src/img/testimonial/quote.svg';
 // import icons
 import { IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp, IoMdArrowForward } from 'react-icons/io';
@@ -22,20 +20,19 @@ export const headerData = {
 
 export const navData = {
   items: [
-    { href: '/', name: 'Home' },
-    { href: '/', name: 'About' },
-    { href: '/', name: 'Projects' },
-    { href: '/', name: 'Interview' },
-    { href: '/', name: 'Articles' },
-    { href: '/', name: 'Contact' },
+    { href: '#home', name: 'Home' },
+    { href: '#about', name: 'About' },
+    { href: '#skills', name: 'My Skils' },
+    { href: '#projects', name: 'Projects' },
+    { href: '#contact', name: 'Contact' },
   ],
 };
 
 export const socialData = [
-  { href: 'https://github.com/PabloRMCarneiro', icon: <IoLogoGithub /> },
-  { href: 'https://www.linkedin.com/in/pablomagalhães', icon: <IoLogoLinkedin /> },
-  { href: 'mailto:pryancarneiro@gmail.com', icon: <AiOutlineMail /> },
-  { href: 'https://wa.me/5577988487960', icon: <IoLogoWhatsapp /> },
+  { href: 'https://github.com/PabloRMCarneiro', icon: <IoLogoGithub style={{color: "#1F1B57"}}/> },
+  { href: 'https://www.linkedin.com/in/pablomagalhães', icon: <IoLogoLinkedin style={{color: "#1F1B57"}}/> },
+  { href: 'mailto:pryancarneiro@gmail.com', icon: <AiOutlineMail style={{color: "#1F1B57"}}/> },
+  { href: 'https://wa.me/5577988487960', icon: <IoLogoWhatsapp style={{color: "#1F1B57"}}/> },
 ];
 
 export const heroData = {
@@ -76,14 +73,8 @@ export const projectData = {
     {
       src: ProjectImg3,
       original: ProjectImg3,
-      width: 465,
+      width: 465*2,
       height: 412,
-    },
-    {
-      src: ProjectImg4,
-      original: ProjectImg4,
-      width: 465,
-      height: 540,
     },
     {
       src: ProjectImg5,
@@ -94,14 +85,8 @@ export const projectData = {
     {
       src: ProjectImg6,
       original: ProjectImg6,
-      width: 464,
+      width: 464*2,
       height: 412,
-    },
-    {
-      src: ProjectImg7,
-      original: ProjectImg7,
-      width: 465,
-      height: 540,
     },
     {
       src: ProjectImg8,
@@ -114,8 +99,8 @@ export const projectData = {
 
 export const interviewData = {
   title:
-    '“Consider what you desire. Your tattoo artist will never tell you what tattoo to have.”',
-  btnText: 'Watch it now',
+    '"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." – Martin Fowler',
+  btnText: 'Watch it now my pitch',
   btnIcon: <FaPlay />,
 };
 
@@ -125,14 +110,14 @@ export const testimonialData = [
     message:
       "The entire team is extremely kind and friendly. They're fantastic. They're great at what they do! And it's unique.They will properly consult with you.",
     name: 'Jack Geoffrey',
-    occupation: 'Tattoo Artist',
+    occupation: 'Back End Developer',
   },
   {
     quoteImg: QuoteImg,
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam culpa asperiores officia natus dignissimos autem possimus molestias aperiam?',
     name: 'Douglas Hane',
-    occupation: 'Tattoo Artist',
+    occupation: 'Full Stack Developer',
   },
 ];
 
@@ -140,7 +125,7 @@ export const contactData = {
   title: 'Get in touch with me:',
   info: [
     {
-      title: 'LA office',
+      title: 'Contacts',
       subtitle:
         'In velit arcu posuere integer sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus',
       address: {
@@ -169,9 +154,9 @@ export const contactData = {
 
 export const footerData = {
   about: {
-    title: 'About void tattoo',
+    title: 'About Pablo Magalhães',
     subtitle:
-      'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
+      'Front End Developer, student of Control and Automation Engineering and passionate about electronic music.',
     address: {
       icon: <FaMapMarkerAlt />,
       name: '65, Rua Flor de Fogo, Belo Horizonte, Brazil',
@@ -188,19 +173,9 @@ export const footerData = {
   links: {
     title: 'Useful links',
     items: [
-      { href: '/', name: 'About me' },
-      { href: '/', name: 'My projects' },
-      { href: '/', name: 'My services' },
-      { href: '/', name: 'Contact me' },
-    ],
-  },
-  program: {
-    title: 'Working Time',
-    items: [
-      { name: 'Mon - Tue / Appointment' },
-      { name: 'Wed - Fri / 10:00 - 9:00pm' },
-      { name: 'Sat / 10:00 - 6:00pm' },
-      { name: 'Sun / no work on this day' },
+      { href: '#about', name: 'About me' },
+      { href: '#projects', name: 'My projects' },
+      { href: '#contact', name: 'Contact me' },
     ],
   },
   newsletter: {

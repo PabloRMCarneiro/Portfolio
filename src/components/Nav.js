@@ -12,7 +12,7 @@ const Nav = () => {
         {items.map((item, index) => {
           return (
             <li key={index}>
-              <a className='link hover:border-b-2 hover:border-dark font-medium transition duration-300' href={item.href}>{item.name}</a>
+              <a className='link hover:border-b-2 hover:border-[#282371] font-medium transition duration-300 text-[#1F1B57]' href={item.href}>{item.name}</a>
             </li>
           );
         })}

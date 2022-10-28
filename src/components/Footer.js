@@ -18,9 +18,9 @@ const staggerContainer = {
 
 const Footer = () => {
   // destructure footer data
-  const { about, links, program, newsletter } = footerData;
+  const { about, links, program } = footerData;
   return (
-    <footer className='bg-dark section'>
+    <footer className='bg-[#1F1B57] section' key={program}>
       <div className='container mx-auto'>
         {/* grid */}
         <motion.div
@@ -87,7 +87,7 @@ const Footer = () => {
             </div>
           </motion.div>
           {/* program */}
-          <motion.div variants={fadeIn('up')} className='flex-1'>
+         {/*  <motion.div variants={fadeIn('up')} className='flex-1'>
             <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>
               {program.title}
             </div>
@@ -96,26 +96,9 @@ const Footer = () => {
                 return <li key={index}>{item.name}</li>;
               })}
             </ul>
-          </motion.div>
+          </motion.div> */}
           {/* newsletter */}
-          <motion.div variants={fadeIn('up')} className='flex-1'>
-            <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>
-              {newsletter.title}
-            </div>
-            <div className='leading-relaxed mb-9 text-[#DBDBDB]'>
-              {newsletter.subtitle}
-            </div>
-            <form className='flex  justify-between items-start border-b border-[#B6B6B6]'>
-              <input
-                className='outline-none placeholder:text-base italic placeholder:capitalize  bg-transparent pb-2'
-                type='text'
-                placeholder={newsletter.form.placeholder}
-              />
-              <button type='submit' className='text-2xl cursor-pointer'>
-                {newsletter.form.icon}
-              </button>
-            </form>
-          </motion.div>
+          
         </motion.div>
       </div>
     </footer>
